@@ -14,4 +14,5 @@ jobs:
       - run:
           python development/validation.py
       - run:    
+          pip install requests
           python development/mitre.py
