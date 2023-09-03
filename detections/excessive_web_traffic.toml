@@ -6,7 +6,7 @@ from = "now-6m"
 name = "Excessive Web Traffic"
 risk_score = 50
 severity = "medium"
-type = "threshold123"
+type = "threshold"
 rule_id = "00000000-0000-0000-0000-000000000007"
 query = '''
 event.dataset: "zeek.http" 
