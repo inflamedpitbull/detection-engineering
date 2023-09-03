@@ -25,6 +25,7 @@ for root, dirs, files in os.walk("detections/"):
                     required_fields = ['description', 'name', 'rule_id', 'risk_score', 'severity', 'type', 'query', 'threshold']
                 else:
                     print("Unsupported rule type found in: " + full_path)
+                    failure = 1
                     break
                 for table in alert: 
                     for field in alert[table]:
