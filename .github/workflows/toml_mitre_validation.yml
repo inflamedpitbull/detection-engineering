@@ -1,6 +1,7 @@
 
 name: TOML/Mitre Validation
 on:
+  push:
   workflow_dispatch:
 jobs:
   toml-validation:
