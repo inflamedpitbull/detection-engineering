@@ -40,6 +40,5 @@ for root, dirs, files in os.walk("detections/"):
                 else:
                     print("Validation Passed for: " + file)
 
-
 if failure !=0:
     sys.exit(1)
