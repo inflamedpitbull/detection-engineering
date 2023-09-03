@@ -40,7 +40,7 @@ for object in mitreData['objects']:
 
 alert_data = {} 
 filtered_object_array = []                     
-for root, dirs, files in os.walk("F:\TCM-DE-101\Code\converted_detections"):
+for root, dirs, files in os.walk("detections/"):
     for file in files:
         if file.endswith('.toml'):
             full_path = os.path.join(root, file)
