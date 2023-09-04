@@ -2,7 +2,8 @@
 name: Elastic Sync
 on:
   push:
-    '**.toml'
+    path:
+      '**.toml'
   workflow_dispatch:
 jobs:
   elastic-detections-update:
