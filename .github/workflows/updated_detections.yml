@@ -1,5 +1,5 @@
 
-name: All Detections to Elastic
+name: Elastic-Detections-Update
 on:
   push:
     '**.toml'
