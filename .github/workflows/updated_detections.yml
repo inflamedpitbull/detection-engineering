@@ -1,5 +1,5 @@
 
-name: Elastic-Detections-Update
+name: Elastic Sync
 on:
   push:
     '**.toml'
