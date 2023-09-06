@@ -14,7 +14,7 @@ data = ""
 
 for root, dirs, files in os.walk("detections/"):
     for file in files:
-        url = "https://inflamedpitbull.kb.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
+        url = "https://d3dbf47550564da6b2de65d4521e15c4.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
         data = "{\n"
         if file.endswith('.toml'):
             full_path = os.path.join(root, file)

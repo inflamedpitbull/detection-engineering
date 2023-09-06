@@ -4,7 +4,7 @@ import tomllib
 
 api_key = os.environ['ELASTIC_KEY']
 
-url = "https://inflamedpitbull.kb.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
+url = "https://d3dbf47550564da6b2de65d4521e15c4.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
 
 headers = {
     'Content-Type': 'application/json;charset=UTF-8',

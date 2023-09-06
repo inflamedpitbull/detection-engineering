@@ -11,21 +11,26 @@ jobs:
     env:
       ELASTIC_KEY: ${{ secrets.ELASTIC_KEY }}
     steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.4' 
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
-
-      # Example 1
+          fetch-depth: 0
+      #https://github.com/marketplace/actions/changed-files
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v38
 
-      # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
+      - name: Run Update Script
+        env:
+          ELASTIC_KEY: ${{ secrets.ELASTIC_KEY }}
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
 
-      - name: List all changed files
-        run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
-          done
- 
+        run: 
+          - run: pip install --upgrade pip
+          - run: pip install requests
+          - run:
+              python development/update_alert.py
+
    
