@@ -29,7 +29,6 @@ jobs:
           ELASTIC_KEY: ${{ secrets.ELASTIC_KEY }}
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run:
-          pip install --upgrade pip
           pip install requests
           python development/update_alert.py
 
