@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11.4' 
 
       #https://github.com/marketplace/actions/changed-files
-      
+
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v38
@@ -29,10 +29,8 @@ jobs:
           ELASTIC_KEY: ${{ secrets.ELASTIC_KEY }}
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
 
-        run: 
-          - run: pip install --upgrade pip
-          - run: pip install requests
-          - run:
-              python development/update_alert.py
+      run: pip install --upgrade pip
+      run: pip install requests
+      run: python development/update_alert.py
 
    
