@@ -1,10 +1,14 @@
+name: Updating Detections
 
-name: Elastic Sync
 on:
   push:
-    path:
-      '**.toml'
+    branches:
+      - main
+    paths:
+      - '**.toml'
+      - 'detections\**'
   workflow_dispatch:
+
 jobs:
   elastic-detections-update:
     runs-on: ubuntu-latest
@@ -13,24 +17,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 0 
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.11.4' 
+          python-version: '3.11.4'
 
-      #https://github.com/marketplace/actions/changed-files
-
-      - name: Get changed files
+      - name: Get Changed Files
         id: changed-files
-        uses: tj-actions/changed-files@v38
+        uses: tj-actions/changed-files@v37
 
       - name: Run Update Script
         env:
           ELASTIC_KEY: ${{ secrets.ELASTIC_KEY }}
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: 
-          pip install --upgrade pip
+        run: |
           pip install requests
           python development/update_alert.py
-
-   
