@@ -51,9 +51,9 @@ for root, dirs, files in os.walk("detections/"):
                 data += "  \"enabled\": true\n}"
             
             rule_id = alert['rule']['rule_id']
-            url = url + "?rule_id=" + rule_id
+            updated_url = url + "?rule_id=" + rule_id
         
-            elastic_data = requests.put(url, headers=headers, data=data).json()
+            elastic_data = requests.put(updated_url, headers=headers, data=data).json()
         
             for key in elastic_data:
                 if key == "status_code":
