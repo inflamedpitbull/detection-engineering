@@ -16,3 +16,4 @@
 | Alert | Date | Author | Risk Score | Severity |
 | --- | --- | --- | --- | --- |
 |Data Exfiltration Observed via FTP|2023/07/11|['Anthony Isherwood']|75|high|
+|Whoami Process Activity|2023/07/18|['Elastic']|21|low|
