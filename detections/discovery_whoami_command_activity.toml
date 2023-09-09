@@ -1,5 +1,5 @@
 [metadata]
-creation_date = "2023/7/18"
+creation_date = "2023/07/18"
 integration = ["endpoint", "system", "windows"]
 maturity = "production"
 min_stack_comments = "New fields added: required_fields, related_integrations, setup"
