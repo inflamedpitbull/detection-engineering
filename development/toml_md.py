@@ -102,7 +102,7 @@ for line in one_month.values():
 
     outF.write("|" + name + "|" + date + "|" + author + "|" + risk_score  + "|" + severity + "|\n")
 
-#twi months ago
+#two months ago
 outF.write("## Two Months Ago\n")
 outF.write("### Alerts\n")
 outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
