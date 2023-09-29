@@ -4,8 +4,8 @@
 | Alert | Date | Author | Risk Score | Severity |
 | --- | --- | --- | --- | --- |
 |Excessive Web Traffic|2023/09/11|['Bohan']|10|medium|
-|PowerShell Invoke-WebRequest Downloading .BAT File|2023/09/11|['Anthony Isherwood']|50|medium|
 |Suspicious File Written to Temp Directory|2023/09/11|['Anthony Isherwood']|75|high|
+|PowerShell Invoke-WebRequest Downloading .BAT File|2023/09/11|['Anthony Isherwood']|50|medium|
 ## One Month Ago
 ### Alerts
 | Alert | Date | Author | Risk Score | Severity |
@@ -15,5 +15,5 @@
 ### Alerts
 | Alert | Date | Author | Risk Score | Severity |
 | --- | --- | --- | --- | --- |
-|Data Exfiltration Observed via FTP|2023/07/11|['Anthony Isherwood']|75|high|
 |Whoami Process Activity|2023/07/18|['Elastic']|21|low|
+|Data Exfiltration Observed via FTP|2023/07/11|['Anthony Isherwood']|75|high|
