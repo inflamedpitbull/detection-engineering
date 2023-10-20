@@ -69,8 +69,8 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1033",
-			"tactic": "discovery",
+			"techniqueID": "T1020",
+			"tactic": "exfiltration",
 			"score": 1,
 			"color": "",
 			"comment": "",
@@ -102,8 +102,8 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1020",
-			"tactic": "exfiltration",
+			"techniqueID": "T1033",
+			"tactic": "discovery",
 			"score": 1,
 			"color": "",
 			"comment": "",
