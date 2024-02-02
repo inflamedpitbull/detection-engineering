@@ -47,17 +47,6 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1033",
-			"tactic": "discovery",
-			"score": 1,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
 			"techniqueID": "T1059",
 			"tactic": "execution",
 			"score": 2,
@@ -103,6 +92,17 @@
 		},
 		{
 			"techniqueID": "T1217",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1033",
 			"tactic": "discovery",
 			"score": 1,
 			"color": "",
