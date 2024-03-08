@@ -36,17 +36,6 @@
 
 "techniques": [
 		{
-			"techniqueID": "T1033",
-			"tactic": "discovery",
-			"score": 1,
-			"color": "",
-			"comment": "",
-			"enabled": true,
-			"metadata": [],
-			"links": [],
-			"showSubtechniques": false
-		},
-		{
 			"techniqueID": "T1059",
 			"tactic": "execution",
 			"score": 2,
@@ -69,8 +58,8 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1046",
-			"tactic": "discovery",
+			"techniqueID": "T1020",
+			"tactic": "exfiltration",
 			"score": 1,
 			"color": "",
 			"comment": "",
@@ -102,8 +91,19 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1020",
-			"tactic": "exfiltration",
+			"techniqueID": "T1046",
+			"tactic": "discovery",
+			"score": 1,
+			"color": "",
+			"comment": "",
+			"enabled": true,
+			"metadata": [],
+			"links": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T1033",
+			"tactic": "discovery",
 			"score": 1,
 			"color": "",
 			"comment": "",
