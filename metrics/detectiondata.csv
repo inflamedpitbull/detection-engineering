@@ -1,7 +1,7 @@
 name,date,author,risk_score,severity,tactic,technique,subtechnique
+Suspicious File Written to Temp Directory,2023/09/11,['Anthony Isherwood'],75,high,Discovery; Discovery,T1082 - System Information Discovery; T1217 - Browser Information Discovery,none - none; none - none
+Data Exfiltration Observed via FTP,2023/07/11,['Anthony Isherwood'],75,high,Exfiltration,T1020 - Automated Exfiltration,none - none
 Whoami Process Activity,2023/07/18,['Elastic'],21,low,Discovery,T1033 - System Owner/User Discovery,none - none
 PowerShell Execution via a BAT File,2023/08/11,['Anthony Isherwood'],50,medium,Execution,T1059 - Command and Scripting Interpreter,T1059.001 - PowerShell
-Data Exfiltration Observed via FTP,2023/07/11,['Anthony Isherwood'],75,high,Exfiltration,T1020 - Automated Exfiltration,none - none
 PowerShell Invoke-WebRequest Downloading .BAT File,2023/09/11,['Anthony Isherwood'],50,medium,Execution,T1059 - Command and Scripting Interpreter,T1059.001 - PowerShell
-Suspicious File Written to Temp Directory,2023/09/11,['Anthony Isherwood'],75,high,Discovery; Discovery,T1082 - System Information Discovery; T1217 - Browser Information Discovery,none - none; none - none
 Excessive Web Traffic,2023/09/11,['Bohan'],10,medium,Discovery,T1046 - Network Service Discovery,none - none
