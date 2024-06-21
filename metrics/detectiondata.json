@@ -58,8 +58,8 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1082",
-			"tactic": "discovery",
+			"techniqueID": "T1020",
+			"tactic": "exfiltration",
 			"score": 1,
 			"color": "",
 			"comment": "",
@@ -69,7 +69,7 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1217",
+			"techniqueID": "T1046",
 			"tactic": "discovery",
 			"score": 1,
 			"color": "",
@@ -91,7 +91,7 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1046",
+			"techniqueID": "T1082",
 			"tactic": "discovery",
 			"score": 1,
 			"color": "",
@@ -102,8 +102,8 @@
 			"showSubtechniques": false
 		},
 		{
-			"techniqueID": "T1020",
-			"tactic": "exfiltration",
+			"techniqueID": "T1217",
+			"tactic": "discovery",
 			"score": 1,
 			"color": "",
 			"comment": "",
